@@ -1,0 +1,101 @@
+*{
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+#headerHolder{
+    display: flex;
+    justify-content: center;
+}
+
+#loadingWrapper{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3% 0 0 0;
+    text-align: center;
+}
+#spinnerWrapper{
+    padding: 2% 0 0 0;
+}
+
+#sideMenuWrapper{
+    align-items: center;
+    border: none; 
+    bottom: 20px; 
+    display: none; 
+    flex-direction: column;
+    outline: none;
+    position: fixed; 
+    right: 15px; 
+    z-index: 99; 
+}
+
+#btn-back-to-top {
+    background-color: red; 
+    border-radius: 10px; 
+    color: white; 
+    cursor: pointer; 
+    display: none;
+    font-size: 18px; 
+    height: auto;
+    margin: 0 0 10% 0;
+    padding: 15px; 
+    width: min-content;
+}
+    
+#btn-back-to-top:hover {
+    background-color: #555;
+}
+
+
+.img-fluid{
+    height: auto;
+    margin-left: -6.5%;
+    max-width: 120%;
+}
+
+p{
+    margin: 3% 0;
+}
+
+span{
+    font-weight: bolder;
+}
+
+#pageOf{
+    font-size: 1rem;
+}
+
+.buttonSearchSide{
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    position: fixed;
+    
+}
+.searchPos1{
+    bottom: 300px;
+}
+.searchPos2{
+    bottom: 225px;
+}
+.searchPos3{
+    bottom: 150px;
+}
+
+#searchCards{
+    display: none;
+}
+
+#nameSearch{
+    display: none;
+} 
+
+#expansionSearch{
+    display: none;
+}

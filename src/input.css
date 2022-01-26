@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttonSearchSide{
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    position: fixed;
+    
+}
+.searchPos1{
+    bottom: 300px;
+}
+.searchPos2{
+    bottom: 225px;
+}
+.searchPos3{
+    bottom: 150px;
+}
+
+#sideMenuWrapper{
+    bottom: 20px;
+    right: 15px;
+}
+
+.CTP{
+    margin-left: 1%;
+    margin-right: -5%;
+    max-width: 19rem;
+}
+.CTPP{
+    max-width: 80%;
+    padding-left: 5%;
+}

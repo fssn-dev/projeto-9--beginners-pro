@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans text-white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project API consumption with Tailwind and Bootstrap Author:FSSN">
+    <title>Projeto Level 9</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="bg-neutral-800">
+
+    <div id="featured-3">
+        <h2 id="headerHolder" class="flex justify-center"><img src="../images/heartstone-logo.png"></h2>
+        <div id="cardHolder" class="flex flex-row flex-wrap justify-center ml-[-7%]">
+
+            <div id="nameSearch" class="hidden">
+                <input type="text" id="nameInput" class="rounded-l-lg w-96 px-2 py-2 text-black">
+                <button id="nameButton" class="rounded-r-lg bg-zinc-600 px-2 py-2" onclick="searchForName()">Search by
+                    Name</button>
+            </div>
+
+            <div id="expansionSearch" class="hidden">
+                <input type="text" id="expansionInput" class="rounded-l-lg w-96 px-2 py-2 text-black">
+                <button type="button" id="expansionButton" class="rounded-r-lg bg-zinc-600 px-2 py-2"
+                    onclick="searchForExpansion()">Search by Expansion</button>
+            </div>
+
+            <div id="expDiv" class="hidden flex-row flex-wrap ml-[7%]"></div>
+
+        </div>
+    </div>
+
+    <div id="sideMenuWrapper" class="hidden fixed z-99 flex-col border-none outline-none items-center">
+        <button id="searchExpansion" class="buttonSearchSide searchPos2"><i>SEARCH</i><i>BY</i><i>EXPANSION</i></button>
+        <button id="searchName" class="buttonSearchSide searchPos1"><i>SEARCH</i><i>BY</i><i>NAME</i></button>
+        <button id="searchCards" style="display:none;"
+            class="buttonSearchSide searchPos3"><i>LIST</i><i>ALL</i><i>CARDS</i></button>
+        <button type="button" id="btn-back-to-top"
+            class="hidden w-min h-auto mb-[10%] bg-red-500 text-white cursor-pointer p-15 rounded[10px] text-lg">
+            <i><img src="../images/outline_arrow_upward_white_24dp.png" alt=""></i>
+        </button>
+        <div>
+            <button id="pageLeft" class="bg-white"><img
+                    src="../images/outline_keyboard_arrow_left_black_24dp.png"></button>
+            <button id="pageRight" class="bg-white"><img
+                    src="../images/outline_keyboard_arrow_right_black_24dp.png"></button>
+        </div>
+        <p id="pageOf"></p>
+    </div>
+
+    <script src="./main-tailwind.js"></script>
+</body>
+
+</html>
